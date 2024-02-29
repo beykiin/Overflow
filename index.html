@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owerflow</title>
+    <style>
+        .all{ 
+            overflow: auto; 
+            padding: 30%;
+        }
+        div{
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        .scroll{
+            overflow: scroll; /* overflow: scroll; eğer içerik sığmıyorsa içeriği gizler ve sadece aşağı doğru kaydırarak içeriği görebilirsin. */
+        }
+        .hidden{
+            overflow: hidden; /* overflow: hidden; eğer içerik sığmıyorsa içeriği sadece gizler ve göremezsin. */
+        }
+        .auto{
+            overflow: auto; /* overflow: auto; eğer içerik sığmıyorsa içeriği gizler ve hem yukarı hem de sağa sola kaydırarak içeriği görebilirsin. */
+        }
+        .visible{
+            overflow: visible; /* overflow: visible; default halidir içerik sığmıyorsa öyle kalır gizlemez. */
+        }
+        .clip{
+            overflow: clip; /* overflow: hidden; eğer içerik sığmıyorsa içeriği sadece gizler ve göremezsin. */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="all">
+            <h1>overflow: scroll;</h1>
+        <div class="scroll">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cumque, aliquid saepe explicabo expedita itaque eveniet alias sed inventore numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maxime.</p>
+        </div><hr>
+        <h1>overflow: hidden;</h1>
+        <div class="hidden">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cumque, aliquid saepe explicabo expedita itaque eveniet alias sed inventore numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maxime.</p>
+        </div><hr>
+        <h1>overflow: auto;</h1>
+        <div class="auto">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cumque, aliquid saepe explicabo expedita itaque eveniet alias sed inventore numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maxime.</p>
+        </div><hr>
+        <h1>overflow: visible;</h1>
+        <div class="visible">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cumque, aliquid saepe explicabo expedita itaque eveniet alias sed inventore numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maxime.</p>
+        </div><hr>
+        <h1>overflow: clip;</h1>
+        <div class="clip">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cumque, aliquid saepe explicabo expedita itaque eveniet alias sed inventore numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maxime.</p>
+        </div>
+        </div>
+</body>
+</html>
